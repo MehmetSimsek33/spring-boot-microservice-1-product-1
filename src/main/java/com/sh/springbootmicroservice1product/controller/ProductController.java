@@ -21,6 +21,7 @@ public class ProductController {
    }
    @DeleteMapping("{productId}")
    public  ResponseEntity<?> deleteProduct(@PathVariable Long productId){
+      //deneme
       productService.deleteById(productId);
       return new  ResponseEntity<>(HttpStatus.OK);
    }
